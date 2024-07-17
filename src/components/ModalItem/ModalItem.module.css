@@ -1,0 +1,102 @@
+.title {
+  color: rgb(16, 24, 40);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.ratingBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.itemRating {
+  color: rgb(16, 24, 40);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.rewiews {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.locationBox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.itemLocation {
+  color: rgb(16, 24, 40);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.campersBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.itemPrice {
+  color: rgb(16, 24, 40);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.imgList {
+  display: flex;
+  gap: 16px;
+}
+
+.imgCamper {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.desriptionItem {
+  color: rgb(71, 84, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.additionalInfoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin-top: 44px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.2);
+  position: relative;
+}
+
+.additionalInfo {
+  color: rgb(16, 24, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.additionalInfo.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(228, 72, 72);
+}

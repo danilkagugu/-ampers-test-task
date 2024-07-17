@@ -1,0 +1,43 @@
+.featuresBox {
+  margin-top: 44px;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.itemList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 100px;
+  color: rgb(16, 24, 40);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  background-color: rgb(242, 244, 247);
+}
+
+.vehicleTitle {
+  margin-top: 44px;
+  color: rgb(16, 24, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.vehicleItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(16, 24, 40);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+}

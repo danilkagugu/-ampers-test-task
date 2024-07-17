@@ -20,6 +20,7 @@ const CatalogItem = ({
   beds,
   price,
   ac,
+  openModal,
 }) => {
   return (
     <div className={css.catalogContainer}>
@@ -29,7 +30,7 @@ const CatalogItem = ({
           <div className={css.catalogHeader}>
             <h2 className={css.itemTitle}>{name}</h2>
             <p className={css.itemPrice}>
-              €{price} <FaRegHeart />
+              €{price}.00 <FaRegHeart />
             </p>
           </div>
           <div className={css.ratingBox}>
@@ -59,7 +60,14 @@ const CatalogItem = ({
             </li>
             {ac > 0 && <li className={css.itemList}>AC</li>}
           </ul>
-          <button className={css.btnShowMore}>Show more</button>
+          <button
+            className={css.btnShowMore}
+            onClick={() => {
+              openModal(true);
+            }}
+          >
+            Show more
+          </button>
         </div>
       </div>
     </div>
