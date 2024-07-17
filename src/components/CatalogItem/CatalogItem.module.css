@@ -48,12 +48,12 @@
 
 .ratingBox {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 4px;
 }
 
 .iconStar {
   fill: var(--yellow);
-  color: var(--yellow);
 }
 
 .itemRating {

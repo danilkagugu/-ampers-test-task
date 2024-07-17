@@ -1,10 +1,6 @@
 import css from "./CatalogItem.module.css";
-import { CiStar } from "react-icons/ci";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa";
-import { TbToolsKitchen2 } from "react-icons/tb";
-import { LiaBedSolid } from "react-icons/lia";
-import { HiOutlineUsers } from "react-icons/hi2";
+import sprite from "../../assets/icon.svg";
+
 const CatalogItem = ({
   src,
   name,
@@ -29,36 +25,74 @@ const CatalogItem = ({
         <div className={css.itemContent}>
           <div className={css.catalogHeader}>
             <h2 className={css.itemTitle}>{name}</h2>
-            <p className={css.itemPrice}>
-              €{price}.00 <FaRegHeart />
-            </p>
+            <p className={css.itemPrice}>€{price}.00</p>
+            <svg width="16" height="16">
+              <use href={`${sprite}#icon-heart`}></use>
+            </svg>
           </div>
           <div className={css.ratingBox}>
-            <CiStar className={css.iconStar} />
+            <svg width="16" height="16" className={css.iconStar}>
+              <use href={`${sprite}#icon-rating`}></use>
+            </svg>
             <p className={css.itemRating}>
               {rating} ({reviews} reviews)
             </p>
-
-            <p className={css.itemLocation}>
-              <IoLocationOutline /> {location}
-            </p>
+            <svg width="16" height="16">
+              <use href={`${sprite}#icon-location`}></use>
+            </svg>
+            <p className={css.itemLocation}>{location}</p>
           </div>
 
           <p className={css.itemDescription}>{description}</p>
           <ul className={css.itemDetails}>
             <li className={css.itemList}>
-              <HiOutlineUsers /> {adults} adults
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-users`}></use>
+              </svg>
+              <p>{adults} adults</p>
             </li>
-            <li className={css.itemList}>{transmission}</li>
-            <li className={css.itemList}>{engine}</li>
             <li className={css.itemList}>
-              <TbToolsKitchen2 /> {kitchen} kitchen
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-korobka`}></use>
+              </svg>
+              <p>{transmission}</p>
             </li>
-            <li className={css.itemList}>{bathroom} bathroom</li>
             <li className={css.itemList}>
-              <LiaBedSolid /> {beds} beds
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-petrol`}></use>
+              </svg>
+              <p>{engine}</p>
             </li>
-            {ac > 0 && <li className={css.itemList}>AC</li>}
+
+            {kitchen && (
+              <li className={css.itemList}>
+                <svg width="16" height="16">
+                  <use href={`${sprite}#icon-kitchen`}></use>
+                </svg>
+                <p>Kitchen</p>
+              </li>
+            )}
+
+            <li className={css.itemList}>
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-shower`}></use>
+              </svg>
+              <p>{bathroom} bathroom</p>
+            </li>
+            <li className={css.itemList}>
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-beds`}></use>
+              </svg>
+              <p>{beds} beds</p>
+            </li>
+            {ac > 0 && (
+              <li className={css.itemList}>
+                <svg width="16" height="16">
+                  <use href={`${sprite}#icon-conditioner`}></use>
+                </svg>
+                <p>AC</p>
+              </li>
+            )}
           </ul>
           <button
             className={css.btnShowMore}

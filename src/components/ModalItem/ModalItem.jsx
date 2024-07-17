@@ -1,8 +1,7 @@
 // import { FaRegHeart } from "react-icons/fa";
 import { useState } from "react";
 import css from "./ModalItem.module.css";
-import { CiStar } from "react-icons/ci";
-import { IoLocationOutline } from "react-icons/io5";
+import sprite from "../../assets/icon.svg";
 import FeaturesInfo from "../FeaturesInfo/FeaturesInfo";
 import ReviewsInfo from "../ReviewsInfo/ReviewsInfo";
 
@@ -47,13 +46,18 @@ const ModalItem = ({
       <h1 className={css.title}>{name}</h1>
       <div className={css.ratingBox}>
         <div className={css.rewiews}>
-          <CiStar className={css.iconStar} />
+          <svg width="16" height="16" className={css.yellowStar}>
+            <use href={`${sprite}#icon-rating`}></use>
+          </svg>
           <p className={css.itemRating}>
             {rating}({reviews.length} reviews)
           </p>
         </div>
         <div className={css.locationBox}>
-          <IoLocationOutline />
+          <svg width="16" height="16">
+            <use href={`${sprite}#icon-location`}></use>
+          </svg>
+          <p>{engine}</p>
           <p className={css.itemLocation}>{location}</p>
         </div>
       </div>
@@ -114,7 +118,7 @@ const ModalItem = ({
           consumption={consumption}
         />
       )}
-      {reviewsOpen && <ReviewsInfo />}
+      {reviewsOpen && <ReviewsInfo reviews={reviews} />}
     </div>
   );
 };

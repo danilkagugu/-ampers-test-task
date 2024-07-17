@@ -1,0 +1,21 @@
+.reviewsBox {
+  display: flex;
+  margin-top: 44px;
+}
+
+.reviewsDetailsBox {
+  width: 45%;
+  padding-right: 24px;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formContainer {
+  padding: 24px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+}

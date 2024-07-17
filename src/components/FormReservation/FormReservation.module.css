@@ -1,0 +1,68 @@
+.titleForm {
+  color: rgb(16, 24, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.textForm {
+  color: rgb(71, 84, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.inputForm {
+  padding: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+
+.calendarInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+
+.inputSearch {
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.inputComment {
+  padding: 18px 18px 76px 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+
+.btnForm {
+  padding: 16px 60px;
+  border-radius: 200px;
+  width: 160px;
+  margin-top: 10px;
+  background-color: var(--red-btn);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.btnForm:hover {
+  background-color: var(--red-btn-hover);
+}

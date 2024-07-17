@@ -1,0 +1,42 @@
+.reviewsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circleName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(242, 244, 247);
+  color: red;
+}
+
+.userInfo {
+  color: rgb(16, 24, 40);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.starsList {
+  display: flex;
+  gap: 4px;
+}
+
+.yellowStar {
+  fill: #ffc531;
+}
+
+.greyStar {
+  fill: #f2f4f7;
+}
