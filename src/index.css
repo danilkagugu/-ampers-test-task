@@ -1,1 +1,53 @@
- 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --dark-grey: #101828;
+  --medium-gray: #475467;
+  --light-gray: #f2f4f7;
+  --very-light-gray: #f7f7f7;
+  --red-btn: #e44848;
+  --red-btn-hover: #d84343;
+  --yellow: #ffc531;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
