@@ -69,10 +69,10 @@ const HeaderMenu = () => {
           </li>
           <li className={css.contactItem}>
             <a
-              className={`${css.phone} ${css.number}`}
-              href="tel:+380503661777"
+              className={`${css.phone}  ${css.number}`}
+              href="tel:+38099999999"
             >
-              +380-50-366-1777
+              +380-99-999-9999
               <span></span>
               <span></span>
               <span></span>

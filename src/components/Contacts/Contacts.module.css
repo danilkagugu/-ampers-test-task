@@ -1,0 +1,35 @@
+.title {
+  color: rgb(16, 24, 40);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  padding: 50px;
+  background-color: #f6f6f6;
+  margin-top: 50px;
+}
+
+.contactBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactText {
+  color: rgb(71, 84, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contactText:hover {
+  color: #a00;
+}

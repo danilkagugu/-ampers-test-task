@@ -1,9 +1,12 @@
+import Contacts from "../../components/Contacts/Contacts";
 import Layout from "../../components/Layout/Layoutr";
 
 const ContactsPage = () => {
   return (
     <div>
-      <Layout></Layout>
+      <Layout>
+        <Contacts />
+      </Layout>
     </div>
   );
 };
