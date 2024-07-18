@@ -1,7 +1,7 @@
 .favoritesList {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 32px;
 }
 
 .favoritesItem {
