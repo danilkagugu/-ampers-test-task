@@ -6,7 +6,13 @@ export const instance = axios.create({
   baseURL: BASE_URL,
 });
 
-export const getCampers = async () => {
+export const getCampersApi = async () => {
   const { data } = await instance.get("/Advert");
+  console.log("data: ", data);
+  return data;
+};
+
+export const getCamperById = async (id) => {
+  const { data } = await instance.get(`/Advert/${id}`);
   return data;
 };

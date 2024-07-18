@@ -1,7 +1,11 @@
 import css from "./CatalogItem.module.css";
 import sprite from "../../assets/icon.svg";
+import { useDispatch, useSelector } from "react-redux";
+import { getCamperID } from "../../redux/campers/operations";
+import { selectCamperFavorite } from "../../redux/campers/selectors";
 
 const CatalogItem = ({
+  id,
   src,
   name,
   rating,
@@ -18,6 +22,12 @@ const CatalogItem = ({
   ac,
   openModal,
 }) => {
+  const dispatch = useDispatch();
+  const handleFavoriteClick = () => {
+    dispatch(getCamperID(id));
+  };
+  const favorites = useSelector(selectCamperFavorite);
+  const isFavorite = favorites.includes(id);
   return (
     <div className={css.catalogContainer}>
       <div className={css.catalogBox}>
@@ -26,7 +36,12 @@ const CatalogItem = ({
           <div className={css.catalogHeader}>
             <h2 className={css.itemTitle}>{name}</h2>
             <p className={css.itemPrice}>€{price}.00</p>
-            <svg width="16" height="16">
+            <svg
+              className={isFavorite ? css.heartActive : css.heartIcon}
+              width="16"
+              height="16"
+              onClick={handleFavoriteClick}
+            >
               <use href={`${sprite}#icon-heart`}></use>
             </svg>
           </div>

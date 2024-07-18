@@ -1,0 +1,139 @@
+.locationBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.locationText {
+  color: rgba(16, 24, 40, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.locationInput {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row;
+  border-radius: 10px;
+  width: 360px;
+  padding: 18px;
+  background-color: rgb(247, 247, 247);
+}
+
+.location {
+  color: rgb(16, 24, 40);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.filters {
+  color: rgb(71, 84, 103);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+.vehicle {
+  color: rgb(16, 24, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.1);
+  margin-bottom: 24px;
+}
+
+.filtersList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 8px;
+  margin-bottom: 32px;
+}
+
+.filtersItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 17px 40px;
+  height: 95px;
+  width: 120px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+}
+
+.filtersItem:hover {
+  border: 1px solid rgb(228, 72, 72);
+}
+
+.filtersText {
+  color: rgb(16, 24, 40);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vehicleType {
+  color: rgb(16, 24, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.1);
+  margin-bottom: 24px;
+}
+
+.vehicleList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 8px;
+}
+
+.vehicleItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 17px 40px;
+  height: 95px;
+  width: 120px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+}
+
+.vehicleItem:hover {
+  border: 1px solid rgb(228, 72, 72);
+}
+
+.vehicleText {
+  color: rgb(16, 24, 40);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btnSearch {
+  margin-top: 50px;
+  padding: 16px 32px;
+  background-color: var(--red-btn);
+  border-radius: 200px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.btnSearch:hover {
+  background-color: var(--red-btn-hover);
+}

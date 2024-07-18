@@ -7,6 +7,8 @@
 .catalogBox {
   display: flex;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .itemImage {
@@ -116,4 +118,12 @@
 }
 .btnShowMore:hover {
   background-color: var(--red-btn-hover);
+}
+
+.heartIcon {
+  fill: white;
+}
+
+.heartActive {
+  fill: red;
 }

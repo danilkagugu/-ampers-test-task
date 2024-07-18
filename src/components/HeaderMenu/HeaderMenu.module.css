@@ -1,0 +1,32 @@
+/* .headerContainer {
+} */
+
+.contactList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  background-color: rgb(220, 220, 220);
+}
+
+.contactItem {
+  border: 1px soldi gray;
+}
+
+.headerMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* src/components/HeaderMenu/HeaderMenu.module.css */
+.menuItem {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: red; /* Колір для підсвічування активного пункту меню */
+  font-weight: bold;
+}

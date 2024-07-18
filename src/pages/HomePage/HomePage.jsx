@@ -1,9 +1,12 @@
-import CatalogList from "../../components/CatalogList/CatalogList";
+import HomeInfo from "../../components/HomeInfo/HomeInfo";
+import Layout from "../../components/Layout/Layoutr";
 
 const HomePage = () => {
   return (
     <div>
-      <CatalogList />
+      <Layout>
+        <HomeInfo />
+      </Layout>
     </div>
   );
 };

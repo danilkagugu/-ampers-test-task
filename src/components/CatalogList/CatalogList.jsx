@@ -1,28 +1,26 @@
 import { useEffect, useState } from "react";
-import { getCampers } from "../../services/advetrs";
+// import { getCampersApi } from "../../services/advetrs";
 import CatalogItem from "../CatalogItem/CatalogItem";
 import css from "./CatalogList.module.css";
 import ModalWrapper from "../ModalWrapper/ModalWrapper";
 import ModalItem from "../ModalItem/ModalItem";
 import scrollController from "../../services/noScroll";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  selectCampers,
+} from "../../redux/campers/selectors";
+import { getCampers } from "../../redux/campers/operations";
 
 const CatalogList = () => {
   const [selectId, setSelectId] = useState(null);
-  const [campers, setCampers] = useState([]);
   const [counterPages, setCounterPages] = useState(4);
   const [open, setOpen] = useState(false);
+  const campers = useSelector(selectCampers);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const camper = await getCampers();
-        setCampers(camper);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchProducts();
-  }, []);
+    dispatch(getCampers());
+  }, [dispatch]);
 
   const handleOpenModal = (id) => {
     setOpen(true);
@@ -67,6 +65,7 @@ const CatalogList = () => {
                 }) => (
                   <li className={css.catalogItem} key={_id}>
                     <CatalogItem
+                      id={_id}
                       src={gallery[0]}
                       name={name}
                       rating={rating}

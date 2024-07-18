@@ -1,0 +1,9 @@
+.favoritesList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.favoritesItem {
+  width: 90%;
+}
