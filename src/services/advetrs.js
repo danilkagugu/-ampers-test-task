@@ -8,7 +8,6 @@ export const instance = axios.create({
 
 export const getCampersApi = async () => {
   const { data } = await instance.get("/Advert");
-  console.log("data: ", data);
   return data;
 };
 

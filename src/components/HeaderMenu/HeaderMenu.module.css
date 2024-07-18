@@ -19,7 +19,6 @@
   align-items: center;
 }
 
-/* src/components/HeaderMenu/HeaderMenu.module.css */
 .menuItem {
   padding: 10px 20px;
   text-decoration: none;
@@ -27,6 +26,6 @@
 }
 
 .active {
-  color: red; /* Колір для підсвічування активного пункту меню */
+  color: red;
   font-weight: bold;
 }
