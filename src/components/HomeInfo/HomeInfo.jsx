@@ -1,8 +1,8 @@
-import css from "./HomeInfo.module.css"
+import css from "./HomeInfo.module.css";
 
 const HomeInfo = () => {
   return (
-    <div>
+    <div className={css.homeBox}>
       <p className={css.homeText}>
         Про нас CampersWorld – ключовий бізнес партнер компанії PATRIOT RENTAL.
         CampersWorld повністю забезпечить кіно/відео-знімальний процес чи

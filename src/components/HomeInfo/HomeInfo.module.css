@@ -1,6 +1,10 @@
+.homeBox {
+  margin-top: 50px;
+}
+
 .homeText {
   color: rgb(16, 24, 40);
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 40px;
 }

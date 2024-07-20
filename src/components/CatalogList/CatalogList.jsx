@@ -6,16 +6,16 @@ import ModalWrapper from "../ModalWrapper/ModalWrapper";
 import ModalItem from "../ModalItem/ModalItem";
 import scrollController from "../../services/noScroll";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  selectCampers,
-} from "../../redux/campers/selectors";
+import { selectCampers, selectIsLoading } from "../../redux/campers/selectors";
 import { getCampers } from "../../redux/campers/operations";
+import Loader from "../Loader/Loader";
 
 const CatalogList = () => {
   const [selectId, setSelectId] = useState(null);
   const [counterPages, setCounterPages] = useState(4);
   const [open, setOpen] = useState(false);
   const campers = useSelector(selectCampers);
+  const loader = useSelector(selectIsLoading);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -44,6 +44,7 @@ const CatalogList = () => {
   return (
     <>
       <div>
+        {loader && <Loader />}
         <ul className={css.catalog}>
           {campers &&
             campers
