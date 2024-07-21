@@ -42,7 +42,7 @@ const CatalogList = () => {
 
   return (
     <>
-      <div>
+      <div className={css.listBox}>
         {loader && <Loader />}
         <ul className={css.catalog}>
           {campers &&
