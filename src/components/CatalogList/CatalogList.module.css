@@ -1,3 +1,10 @@
+.listBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .catalog {
   display: flex;
   align-items: center;
@@ -6,11 +13,11 @@
 }
 
 .catalogItem {
-  width: 888px;
+  max-width: 888px;
 }
 
 .btnLoadMore {
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 16px 32px;
   border: 1px solid rgba(71, 84, 103, 0.2);
   border-radius: 200px;
