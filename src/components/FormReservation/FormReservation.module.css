@@ -1,5 +1,5 @@
 .titleForm {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -13,7 +13,7 @@
 }
 
 .textForm {
-  color: rgb(71, 84, 103);
+  color: var(--medium-gray);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -24,7 +24,7 @@
   padding: 18px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--very-light-gray);
 }
 
 .calendarInput {
@@ -34,7 +34,7 @@
   padding: 18px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--very-light-gray);
 }
 
 .inputSearch {
@@ -48,7 +48,7 @@
   padding: 18px 18px 76px 18px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--very-light-gray);
 }
 
 .btnForm {

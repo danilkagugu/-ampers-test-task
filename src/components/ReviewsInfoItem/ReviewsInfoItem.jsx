@@ -1,5 +1,4 @@
 import css from "./ReviewsInfoItem.module.css";
-// import { CiStar } from "react-icons/ci";
 import sprite from "../../assets/icon.svg";
 const ReviewsInfoItem = ({ name, comment, star }) => {
   const starsArray = [];
@@ -34,11 +33,3 @@ const ReviewsInfoItem = ({ name, comment, star }) => {
 };
 
 export default ReviewsInfoItem;
-//  <svg key={i}
-//    width="16"
-//    height="16"
-//     className={i < star ? css.yellowStar : css.greyStar}
-//
-//  >
-//    <use href={`${sprite}#icon-rating}`}></use>
-//  </svg>;

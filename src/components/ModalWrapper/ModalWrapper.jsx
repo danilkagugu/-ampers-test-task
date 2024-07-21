@@ -22,8 +22,8 @@ const ModalWrapper = ({
       transform,
       padding: "0",
       borderRadius: "15px",
-      width: "982px", // Fixed width
-      height: "720px", // Fixed height
+      width: "982px",  
+      height: "720px",  
     },
     overlay: {
       backgroundColor: "rgba(47, 47, 47, 0.6)",

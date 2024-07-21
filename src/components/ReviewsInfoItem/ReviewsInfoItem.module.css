@@ -17,12 +17,12 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgb(242, 244, 247);
-  color: red;
+  background-color: var(--light-gray);
+  color: var(--red-btn);
 }
 
 .userInfo {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -34,9 +34,9 @@
 }
 
 .yellowStar {
-  fill: #ffc531;
+  fill: var(--yellow);
 }
 
 .greyStar {
-  fill: #f2f4f7;
+  fill: var(--very-light-gray);
 }

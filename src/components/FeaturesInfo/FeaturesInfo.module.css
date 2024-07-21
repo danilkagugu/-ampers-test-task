@@ -21,18 +21,18 @@
   gap: 8px;
   padding: 12px 18px;
   border-radius: 100px;
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
-  background-color: rgb(242, 244, 247);
+  background-color: var(--light-gray);
 }
 
 .vehicleTitle {
   margin-top: 44px;
   margin-bottom: 24px;
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;

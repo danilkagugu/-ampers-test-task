@@ -16,31 +16,31 @@ const FilterItems = () => {
       <h2 className={css.vehicle}>Vehicle equipment</h2>
       <ul className={css.filtersList}>
         <li className={css.filtersItem}>
-          <svg width="16" height="16">
-            <use href={`${sprite}#icon-wind`}></use>
+          <svg width="32" height="32">
+            <use href={`${sprite}#icon-conditioner`}></use>
           </svg>
           <p className={css.filtersText}>AC</p>
         </li>
         <li className={css.filtersItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-korobka`}></use>
           </svg>
           <p className={css.filtersText}>Automatic</p>
         </li>
         <li className={css.filtersItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-kitchen`}></use>
           </svg>
           <p className={css.filtersText}>Kitchen</p>
         </li>
         <li className={css.filtersItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-tv`}></use>
           </svg>
           <p className={css.filtersText}>TV</p>
         </li>
         <li className={css.filtersItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-shower`}></use>
           </svg>
           <p className={css.filtersText}>Shower/WC</p>
@@ -49,19 +49,19 @@ const FilterItems = () => {
       <h2 className={css.vehicleType}>Vehicle type</h2>
       <ul className={css.vehicleList}>
         <li className={css.vehicleItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-camper3`}></use>
           </svg>
           <p className={css.vehicleText}>Van</p>
         </li>
         <li className={css.vehicleItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-camper2`}></use>
           </svg>
           <p className={css.vehicleText}>Fully Integrated</p>
         </li>
         <li className={css.vehicleItem}>
-          <svg width="16" height="16">
+          <svg width="32" height="32">
             <use href={`${sprite}#icon-camper`}></use>
           </svg>
           <p className={css.vehicleText}>Alcove</p>

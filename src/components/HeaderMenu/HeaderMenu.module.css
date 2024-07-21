@@ -1,11 +1,8 @@
-/* .headerContainer {
-} */
-
 .headerContacts {
   width: 100%;
   margin-bottom: 30px;
 }
-/* -------------------------------------------------------------LOGO------------------------------------------------------------------- */
+
 .logoBox {
   display: flex;
   align-items: center;
@@ -23,7 +20,7 @@
 .circ {
   height: 5vmin;
   width: 5vmin;
-  background: #df3e55;
+  background: var(--red-btn);
   border-radius: 100%;
   margin-bottom: 7vmin;
   animation-name: bounce-7;

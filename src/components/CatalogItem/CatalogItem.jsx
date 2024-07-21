@@ -88,18 +88,22 @@ const CatalogItem = ({
               </li>
             )}
 
-            <li className={css.itemList}>
-              <svg width="16" height="16">
-                <use href={`${sprite}#icon-shower`}></use>
-              </svg>
-              <p>{bathroom} bathroom</p>
-            </li>
-            <li className={css.itemList}>
-              <svg width="16" height="16">
-                <use href={`${sprite}#icon-beds`}></use>
-              </svg>
-              <p>{beds} beds</p>
-            </li>
+            {bathroom && (
+              <li className={css.itemList}>
+                <svg width="16" height="16">
+                  <use href={`${sprite}#icon-shower`}></use>
+                </svg>
+                <p>{bathroom} bathroom</p>
+              </li>
+            )}
+            {beds > 0 && (
+              <li className={css.itemList}>
+                <svg width="16" height="16">
+                  <use href={`${sprite}#icon-beds`}></use>
+                </svg>
+                <p>{beds} beds</p>
+              </li>
+            )}
             {ac > 0 && (
               <li className={css.itemList}>
                 <svg width="16" height="16">

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { getCampersApi } from "../../services/advetrs";
 import CatalogItem from "../CatalogItem/CatalogItem";
 import css from "./CatalogList.module.css";
 import ModalWrapper from "../ModalWrapper/ModalWrapper";

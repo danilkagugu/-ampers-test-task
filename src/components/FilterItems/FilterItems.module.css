@@ -20,18 +20,18 @@
   border-radius: 10px;
   width: 360px;
   padding: 18px;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--light-gray);
 }
 
 .location {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .filters {
-  color: rgb(71, 84, 103);
+  color: var(--medium-gray);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -39,7 +39,7 @@
 }
 
 .vehicle {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -71,18 +71,18 @@
 }
 
 .filtersItem:hover {
-  border: 1px solid rgb(228, 72, 72);
+  border: 1px solid var(--red-btn-hover);
 }
 
 .filtersText {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
 }
 
 .vehicleType {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -113,11 +113,11 @@
 }
 
 .vehicleItem:hover {
-  border: 1px solid rgb(228, 72, 72);
+  border: 1px solid var(--red-btn-hover);
 }
 
 .vehicleText {
-  color: rgb(16, 24, 40);
+  color: var(--dark-grey);
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;

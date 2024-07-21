@@ -1,4 +1,3 @@
-// import { FaRegHeart } from "react-icons/fa";
 import { useState } from "react";
 import css from "./ModalItem.module.css";
 import sprite from "../../assets/icon.svg";

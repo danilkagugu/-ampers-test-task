@@ -38,7 +38,6 @@ const FeaturesInfo = ({
             <p>{transmission}</p>
           </li>
           <li className={css.itemList}>
-            {" "}
             <svg width="16" height="16">
               <use href={`${sprite}#icon-petrol`}></use>
             </svg>
@@ -68,7 +67,7 @@ const FeaturesInfo = ({
           {CD > 0 && (
             <li className={css.itemList}>
               <svg width="16" height="16">
-                <use href={`${sprite}#icon-conditioner`}></use>
+                <use href={`${sprite}#icon-cold`}></use>
               </svg>
               <p>{CD} air conditioner</p>
             </li>
@@ -89,7 +88,24 @@ const FeaturesInfo = ({
               <p>{hob} hob </p>
             </li>
           )}
-          {ac > 0 && <li className={css.itemList}>AC</li>}
+          {ac > 0 && (
+            <li className={css.itemList}>
+              {" "}
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-conditioner`}></use>
+              </svg>
+              <p>AC</p>
+            </li>
+          )}
+          {CD > 0 && (
+            <li className={css.itemList}>
+              {" "}
+              <svg width="16" height="16">
+                <use href={`${sprite}#icon-cd`}></use>
+              </svg>
+              <p>CD</p>
+            </li>
+          )}
         </ul>
         <h2 className={css.vehicleTitle}>Vehicle details</h2>
         <ul className={css.vehicleList}>

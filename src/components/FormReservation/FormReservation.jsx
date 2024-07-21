@@ -1,7 +1,6 @@
 import DatePicker from "react-datepicker";
 import css from "./FormReservation.module.css";
 import { CiCalendar } from "react-icons/ci";
-// import sprite from "../../assets/icon.svg";
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import { reservationSchema } from "../../services/yupSchema";
@@ -17,7 +16,6 @@ const FormReservation = () => {
     calendar: "",
     comment: "",
   };
-  console.log(INITIAL_FORM);
   return (
     <>
       <h2 className={css.titleForm}>Book your campervan now</h2>
